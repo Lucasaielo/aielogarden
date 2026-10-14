@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"14fc387f55564ae9","x":-20,"y":-380,"width":250,"height":60,"type":"text","text":"Goiabada"},
+		{"id":"f4ac61a528779ece","x":-460,"y":-200,"width":250,"height":60,"type":"text","text":"Queijinho"}
+	],
+	"edges":[
+		{"id":"fe023295ebb3b68e","fromNode":"f4ac61a528779ece","fromSide":"right","toNode":"14fc387f55564ae9","toSide":"left"},
+		{"id":"394ea12714a1b463","fromNode":"14fc387f55564ae9","fromSide":"bottom","toNode":"f4ac61a528779ece","toSide":"right"}
+	]
+}
