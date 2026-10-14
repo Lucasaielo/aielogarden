@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: aielogarden.github.com
+  baseUrl: aielogarden.github.com/aielogarden
   ignorePatterns:
     - private
     - templates
