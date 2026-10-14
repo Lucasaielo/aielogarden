@@ -54,7 +54,6 @@
     "@quartz-community/content-meta": "^1.0.0",
     "@quartz-community/content-page": "^1.0.0",
     "@quartz-community/crawl-links": "^1.0.0",
-    "@quartz-themes/core": "^2.0.0",
     "@quartz-community/created-modified-date": "^1.0.0",
     "@quartz-community/darkmode": "^1.0.0",
     "@quartz-community/description": "^1.0.0",
@@ -86,8 +85,10 @@
     "@quartz-community/tag-list": "^1.0.0",
     "@quartz-community/tag-page": "^1.0.0",
     "@quartz-community/unlisted-pages": "^1.0.0",
+    "@quartz-themes/core": "^2.0.0",
     "ansi-truncate": "^1.4.0",
     "async-mutex": "^0.5.0",
+    "brace-expansion": "^5.0.12",
     "chokidar": "^5.0.0",
     "esbuild-sass-plugin": "^3.6.0",
     "github-slugger": "^2.0.0",
@@ -96,6 +97,7 @@
     "hast-util-to-jsx-runtime": "^2.3.6",
     "isomorphic-git": "^1.43.3",
     "lightningcss": "^1.31.1",
+    "micromatch": "^0.1.0",
     "micromorph": "^0.4.5",
     "minimatch": "^10.1.1",
     "preact": "^11.0.1",
@@ -130,5 +132,9 @@
     "prettier": "^3.9.10",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.28.2": true
   }
 }
