@@ -4,7 +4,7 @@ draft: false
 tags:
   - evergreen
 ---
-**Minha cor favorita é preto.
+**Minha cor favorita é preto.**
 
 Não porque é a cor mais única que tem, ou porque ela tem um grande significado ou brilho próprio, mas sim pela complexidade que a ausência de cor pode ter.
 
