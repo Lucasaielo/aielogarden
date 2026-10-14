@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\quartz",
+    "\\quartz\\styles"
   ],
-  "SelectedNode": "\\quartz.config.yaml",
+  "SelectedNode": "\\quartz\\styles\\custom.scss",
   "PreviewInSolutionExplorer": false
 }
