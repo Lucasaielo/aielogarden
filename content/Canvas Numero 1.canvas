@@ -1,7 +1,7 @@
 {
 	"nodes":[
-		{"id":"14fc387f55564ae9","x":-20,"y":-380,"width":250,"height":60,"type":"text","text":"Goiabada"},
-		{"id":"f4ac61a528779ece","x":-460,"y":-200,"width":250,"height":60,"type":"text","text":"Queijinho"}
+		{"id":"14fc387f55564ae9","type":"text","text":"Netsuke","x":-20,"y":-380,"width":250,"height":60},
+		{"id":"f4ac61a528779ece","type":"text","text":"Daruma","x":-520,"y":-280,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"fe023295ebb3b68e","fromNode":"f4ac61a528779ece","fromSide":"right","toNode":"14fc387f55564ae9","toSide":"left"},
