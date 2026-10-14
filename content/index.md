@@ -1,5 +1,4 @@
 ---
-title: Welcome to Quartz
+title: Home
 ---
-Um pequeno jardim do Lucas
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Um pequeno jardim de ideias

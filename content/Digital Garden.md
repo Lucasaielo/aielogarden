@@ -1,8 +1,10 @@
 ---
-title: "Digital Garden"
+title: Digital Garden
 draft: false
 tags:
+  - seedling
+  - sapling
+  - evergreen
 ---
- Esse é meu jardim, testando se funciona
- AGORA VAI
- [[content/index|index]] aqui é a home, eu espero
+Jardimzinho
+planta - planta - planta
