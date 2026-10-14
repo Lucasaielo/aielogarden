@@ -1,5 +1,5 @@
 ---
-title: Mapas Mentais
+title: Mapa Mental
 draft: false
 tags:
   - seedling
