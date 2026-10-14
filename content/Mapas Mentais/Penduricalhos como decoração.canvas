@@ -1,10 +1,38 @@
 {
 	"nodes":[
-		{"id":"14fc387f55564ae9","type":"text","text":"Netsuke","x":-20,"y":-380,"width":250,"height":60},
-		{"id":"f4ac61a528779ece","type":"text","text":"Daruma","x":-520,"y":-280,"width":250,"height":60}
+		{"id":"10c9730ddd741f39","type":"text","text":"Na falta de bolsos, podem ser usados coisas penduradas","x":-400,"y":-940,"width":250,"height":100},
+		{"id":"dc5abe6c6ccece62","type":"text","text":"Bolsas","x":-175,"y":-440,"width":250,"height":60},
+		{"id":"68f9e519e98ba79f","type":"text","text":"Caixa Inro","x":105,"y":-440,"width":250,"height":60},
+		{"id":"2e2c56e477c851ba","type":"text","text":"Chaveiro","x":-860,"y":-260,"width":250,"height":60},
+		{"id":"7d158ba8e5715917","type":"text","text":"Mosquetão","x":-560,"y":-410,"width":250,"height":60},
+		{"id":"03262ce89eb3a6d8","type":"text","text":"Ou usam um acessório pra pendurar um item. O próprio acessório vira decorativo","x":-560,"y":-637,"width":250,"height":127},
+		{"id":"1902b482c37b80f4","type":"text","text":"As vezes os próprios itens ficam pendurados","x":-960,"y":-727,"width":250,"height":90},
+		{"id":"1fd147baee5e0127","type":"text","text":"Pode se pendurar um recipiente e guardar itens dentro","x":-20,"y":-682,"width":250,"height":94},
+		{"id":"daa419104e529d7d","type":"text","text":"Labubu","x":-240,"y":-40,"width":250,"height":60},
+		{"id":"034f626fee22f8e0","type":"text","text":"E deles, adicionar MAIS penduricalhos decorativos","x":-50,"y":-260,"width":250,"height":60},
+		{"id":"3516f636135c0b58","type":"text","text":"As vezes partes úteis da peça se tornam mais decorativas com o tempo, chegando a um ponto que vão além da utilidade original e se tornam algo por si só","x":315,"y":-279,"width":330,"height":159},
+		{"id":"14fc387f55564ae9","type":"text","text":"**Netsuke**\nOriginalmente era como um botão para segurar a caixa pendurada no obi do kimono. Mas por que não decorar o próprio botão?","x":355,"y":20,"width":250,"height":180},
+		{"id":"4ee889a71d64b8fb","type":"text","text":"Chatelaine","x":-1210,"y":-290,"width":250,"height":60},
+		{"id":"66e01f64990aa01c","type":"text","text":"![300](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Needlework_Chatelaine.jpg/330px-Needlework_Chatelaine.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail)","x":-1280,"y":-180,"width":235,"height":520},
+		{"id":"4e39018ed8778322","x":355,"y":280,"width":250,"height":325,"type":"text","text":"![300](https://collectionapi.metmuseum.org/api/collection/v1/iiif/58705/188493/main-image)"}
 	],
 	"edges":[
-		{"id":"fe023295ebb3b68e","fromNode":"f4ac61a528779ece","fromSide":"right","toNode":"14fc387f55564ae9","toSide":"left"},
-		{"id":"394ea12714a1b463","fromNode":"14fc387f55564ae9","fromSide":"bottom","toNode":"f4ac61a528779ece","toSide":"right"}
+		{"id":"3de570e046c54107","fromNode":"1902b482c37b80f4","fromSide":"bottom","toNode":"4ee889a71d64b8fb","toSide":"top"},
+		{"id":"3aa494d8f441d07e","fromNode":"10c9730ddd741f39","fromSide":"bottom","toNode":"1902b482c37b80f4","toSide":"top"},
+		{"id":"99f0958b3baa9a5d","fromNode":"1902b482c37b80f4","fromSide":"bottom","toNode":"2e2c56e477c851ba","toSide":"top"},
+		{"id":"0109dae31e34661f","fromNode":"10c9730ddd741f39","fromSide":"bottom","toNode":"1fd147baee5e0127","toSide":"top"},
+		{"id":"e65a63b4e2f731fe","fromNode":"1fd147baee5e0127","fromSide":"bottom","toNode":"dc5abe6c6ccece62","toSide":"top"},
+		{"id":"ad9a3f4ae0e3fc6c","fromNode":"1fd147baee5e0127","fromSide":"bottom","toNode":"68f9e519e98ba79f","toSide":"top"},
+		{"id":"b3ea9e2f484e75c9","fromNode":"1902b482c37b80f4","fromSide":"right","toNode":"03262ce89eb3a6d8","toSide":"left"},
+		{"id":"62f5e42630f5f799","fromNode":"03262ce89eb3a6d8","fromSide":"bottom","toNode":"7d158ba8e5715917","toSide":"top"},
+		{"id":"da5223453840dad9","fromNode":"7d158ba8e5715917","fromSide":"bottom","toNode":"2e2c56e477c851ba","toSide":"top"},
+		{"id":"4fde50e21a5b6a07","fromNode":"dc5abe6c6ccece62","fromSide":"bottom","toNode":"034f626fee22f8e0","toSide":"top"},
+		{"id":"40066e81b1ca9ff1","fromNode":"68f9e519e98ba79f","fromSide":"bottom","toNode":"034f626fee22f8e0","toSide":"top"},
+		{"id":"ecf44f6cd804571f","fromNode":"034f626fee22f8e0","fromSide":"bottom","toNode":"14fc387f55564ae9","toSide":"top"},
+		{"id":"38a53b7ac30ba3cf","fromNode":"034f626fee22f8e0","fromSide":"bottom","toNode":"daa419104e529d7d","toSide":"top"},
+		{"id":"26cc20f9197bebef","fromNode":"68f9e519e98ba79f","fromSide":"bottom","toNode":"3516f636135c0b58","toSide":"top"},
+		{"id":"6b0c317f0b192029","fromNode":"3516f636135c0b58","fromSide":"bottom","toNode":"14fc387f55564ae9","toSide":"top"},
+		{"id":"84e4c92247ce1026","fromNode":"4ee889a71d64b8fb","fromSide":"bottom","toNode":"66e01f64990aa01c","toSide":"top"},
+		{"id":"c26ad27b12d64217","fromNode":"14fc387f55564ae9","fromSide":"bottom","toNode":"4e39018ed8778322","toSide":"top"}
 	]
 }
