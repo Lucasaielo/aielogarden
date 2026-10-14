@@ -1,8 +1,7 @@
 ---
-title: Digital Garden
+title: Quantos espaços temos?
 draft: false
 tags:
-  - seedling
   - sapling
   - evergreen
 ---
