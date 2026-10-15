@@ -17,8 +17,7 @@
 		{"id":"7d158ba8e5715917","type":"text","text":"Mosquetão","x":-650,"y":-390,"width":250,"height":60},
 		{"id":"2e2c56e477c851ba","type":"text","text":"Chaveiro","x":-990,"y":-100,"width":250,"height":60},
 		{"id":"143fd2d007a250d3","type":"text","text":"**Penduricalhos como Decoração**\n #seedling ","x":-495,"y":-1160,"width":440,"height":140},
-		{"id":"cdb6c730be16a955","type":"file","file":"Mapas Mentais/index.md","x":-960,"y":-1420,"width":400,"height":400},
-		{"id":"366d38317befe418","type":"file","file":"attachments/Pasted image 20261015135540.png","x":-1720,"y":-1220,"width":400,"height":371}
+		{"id":"cdb6c730be16a955","type":"file","file":"Mapas Mentais/index.md","x":-960,"y":-1420,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"3de570e046c54107","fromNode":"1902b482c37b80f4","fromSide":"bottom","toNode":"4ee889a71d64b8fb","toSide":"top"},
