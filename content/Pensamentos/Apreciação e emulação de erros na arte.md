@@ -3,6 +3,7 @@ title: Apreciação e emulação de erros na arte
 draft: false
 tags:
   - evergreen
+  - ensaio
 ---
  Erros acontecem, ou como diria o saudoso Bob Ross: "Erros não, acidentes felizes".
 

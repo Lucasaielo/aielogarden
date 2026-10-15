@@ -3,6 +3,7 @@ title: Muita ideia paraliza
 draft: false
 tags:
   - evergreen
+  - ensaio
 ---
 
 <div style="background-color: #d1081c;">

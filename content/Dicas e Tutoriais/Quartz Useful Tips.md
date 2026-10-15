@@ -1,20 +1,29 @@
 ---
-title: Quartz e Obsidian códigos
+title: Lembretes Quartz
 draft: false
 tags:
   - seedling
+Language: English
 ---
-## Comandos Quartz
+## Quartz Sync Shortcut
 
-- Pra rodar o site no localhost
+You can create a quick Sync Button on your desktop by creating a shortcut with this function:
+`C:\Windows\System32\cmd.exe /k "cd [YourQuartzDirectory] & npx quartz sync"`
+
+If your quartz directory is not on C:, make sure to specify the change of directory before the call. To change it to D, for example, add a /d like this:
+`C:\Windows\System32\cmd.exe /k "cd /d [YourQuartzDirectory] & npx quartz sync"`
+
+## Quartz Commands
+
+- Test build on localhost
   - `npx quartz build --serve`
 
-- Pra dar commit das mudanças
+- Commit changes
   - `npx quartz sync`
 
 ---
 
-## HTML pra mudar coisas na página
+## HTML codes from custom css
 
 `<div style="background-color: --secondary;">`
 `</div>`

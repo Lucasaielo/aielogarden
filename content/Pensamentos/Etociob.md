@@ -3,6 +3,7 @@ title: Etociob
 draft: false
 tags:
   - sapling
+  - conceito
 ---
  Boycott vem de Charles Boycott, o primeiro boicotado do mundo.
  O dono de terras Lord Erne não morava próximo a suas terras na Irlanda, entao Charles Boycott tomava conta dessas terras.

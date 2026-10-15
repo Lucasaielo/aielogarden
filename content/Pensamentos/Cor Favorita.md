@@ -3,6 +3,7 @@ title: Cor Favorita
 draft: false
 tags:
   - evergreen
+  - ensaio
 ---
 **Minha cor favorita é preto.**
 
