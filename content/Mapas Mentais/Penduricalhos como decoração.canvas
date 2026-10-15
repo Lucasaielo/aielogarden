@@ -1,6 +1,5 @@
 {
 	"nodes":[
-		{"id":"5996bbf65c22548a","x":-989,"y":-1396,"width":400,"height":400,"type":"file","file":"content/Mapas Mentais/index.md"},
 		{"id":"10c9730ddd741f39","type":"text","text":"Na falta de bolsos, podem ser usados coisas penduradas","x":-400,"y":-940,"width":250,"height":100},
 		{"id":"66e01f64990aa01c","type":"text","text":"![300](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Needlework_Chatelaine.jpg/330px-Needlework_Chatelaine.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail)","x":-1320,"y":-40,"width":235,"height":520},
 		{"id":"4ee889a71d64b8fb","type":"text","text":"Chatelaine","x":-1240,"y":-259,"width":250,"height":60},
@@ -17,7 +16,9 @@
 		{"id":"03262ce89eb3a6d8","type":"text","text":"Ou usam um acessório pra pendurar um item. O próprio acessório vira decorativo","x":-650,"y":-648,"width":250,"height":127},
 		{"id":"7d158ba8e5715917","type":"text","text":"Mosquetão","x":-650,"y":-390,"width":250,"height":60},
 		{"id":"2e2c56e477c851ba","type":"text","text":"Chaveiro","x":-990,"y":-100,"width":250,"height":60},
-		{"id":"143fd2d007a250d3","type":"text","text":"**Penduricalhos como Decoração**\n #seedling ","x":-495,"y":-1160,"width":440,"height":140}
+		{"id":"143fd2d007a250d3","type":"text","text":"**Penduricalhos como Decoração**\n #seedling ","x":-495,"y":-1160,"width":440,"height":140},
+		{"id":"cdb6c730be16a955","type":"file","file":"Mapas Mentais/index.md","x":-960,"y":-1420,"width":400,"height":400},
+		{"id":"366d38317befe418","type":"file","file":"attachments/Pasted image 20261015135540.png","x":-1720,"y":-1220,"width":400,"height":371}
 	],
 	"edges":[
 		{"id":"3de570e046c54107","fromNode":"1902b482c37b80f4","fromSide":"bottom","toNode":"4ee889a71d64b8fb","toSide":"top"},
