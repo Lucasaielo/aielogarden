@@ -2,3 +2,17 @@
 
 // put your custom CSS here!
 
+.page-title {
+    font-size: 2.4rem; // Generous size for the main page title
+}
+
+.folder-container div > a {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+// Folder Names
+
+.folder-outer a {
+    font-size: 1.0rem !important;
+    color: var(--dark) !important;
+}

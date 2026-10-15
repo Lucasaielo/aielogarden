@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: AieloGarden
+  pageTitle: AIELOGARDEN
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,13 +16,12 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      title: DM Mono
       header: DM Mono
       body: Libre Baskerville
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
+        light: "#E8E1D8"
         lightgray: "#e5e5e5"
         gray: "#b8b8b8"
         darkgray: "#4e4e4e"
@@ -214,8 +213,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Instagram: https://www.instagram.com/aielo_art/
+        X/Twitter: https://x.com/lucasaielo
     layout:
       position: footer
       priority: 50
@@ -253,6 +252,7 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
+      title: Explore
       folderDefaultState: collapsed
       folderClickBehavior: link
       useSavedState: true
