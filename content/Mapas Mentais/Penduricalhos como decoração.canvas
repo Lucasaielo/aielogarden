@@ -1,6 +1,5 @@
 {
 	"nodes":[
-		{"id":"11351fb0333f3278","x":-400,"y":-1754,"width":400,"height":400,"type":"file","file":"content/Pensamentos/Apreciação e emulação de erros na arte.md"},
 		{"id":"10c9730ddd741f39","type":"text","text":"Na falta de bolsos, podem ser usados coisas penduradas","x":-400,"y":-940,"width":250,"height":100},
 		{"id":"66e01f64990aa01c","type":"text","text":"![300](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Needlework_Chatelaine.jpg/330px-Needlework_Chatelaine.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail)","x":-1320,"y":-40,"width":235,"height":520},
 		{"id":"4ee889a71d64b8fb","type":"text","text":"Chatelaine","x":-1240,"y":-259,"width":250,"height":60},
