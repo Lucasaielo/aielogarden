@@ -58,12 +58,6 @@ plugins:
         dark: github-dark
       keepBackground: false
     order: 20
-  - source: "@quartz-community/obsidian-flavored-markdown"
-    enabled: true
-    options:
-      enableInHtmlEmbed: false
-      enableCheckbox: true
-    order: 30
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
     order: 40
@@ -261,6 +255,23 @@ plugins:
     layout:
       position: left
       priority: 50
+  - source: github:quartz-community/obsidian-flavored-markdown
+    enabled: true
+    options:
+      comments: true
+      highlight: true
+      wikilinks: true
+      callouts: true
+      mermaid: true
+      parseTags: true
+      parseBlockReferences: true
+      enableInHtmlEmbed: false
+      enableYouTubeEmbed: true
+      enableTweetEmbed: true
+      enableVideoEmbed: true
+      enableCheckbox: false
+      enableObsidianUri: true
+    order: 30
 layout:
   groups:
     toolbar:

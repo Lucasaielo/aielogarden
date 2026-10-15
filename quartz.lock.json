@@ -12,6 +12,12 @@
       "resolved": "https://github.com/quartz-community/fonts.git",
       "commit": "e7c824b6149f46a50b98a5c1474605385090895d",
       "installedAt": "2026-10-14T23:12:08.537Z"
+    },
+    "obsidian-flavored-markdown": {
+      "source": "github:quartz-community/obsidian-flavored-markdown",
+      "resolved": "https://github.com/quartz-community/obsidian-flavored-markdown.git",
+      "commit": "1ae94b7961332d383bd68a92b1178be54f1422a7",
+      "installedAt": "2026-10-15T03:35:32.370Z"
     }
   }
 }
