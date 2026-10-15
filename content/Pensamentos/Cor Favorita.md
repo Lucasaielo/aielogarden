@@ -25,7 +25,7 @@ Em "Judith e sua Criada", por Artemisia Gentileschi, a luz mostra duas mulheres,
 Judith usa sua mão para esconder seu rosto nas sombras. Em sua outra mão, uma espada é apenas uma silhueta preta cortando o amarelo de se vestido. E mais abaixo, a cabeça de Holofernes é colocada em um saco, já quase toda tomada pela cor preta, é até difícil discernir os traços do rosto.  
 O preto disfarça o crime, sendo a base de toda a história da pintura.
 
-![378](https://upload.wikimedia.org/wikipedia/commons/9/94/Artemisia_Gentileschi_Judith_Maidservant_DIA.jpg)
+![400](https://upload.wikimedia.org/wikipedia/commons/9/94/Artemisia_Gentileschi_Judith_Maidservant_DIA.jpg)
 
 > By Artemisia Gentileschi - http://www.usc.edu/schools/annenberg/asc/projects/comm544/library/images/074bg.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3143489
 
