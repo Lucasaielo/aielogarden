@@ -215,6 +215,7 @@ plugins:
       links:
         Instagram: https://www.instagram.com/aielo_art/
         X/Twitter: https://x.com/lucasaielo
+        Github: https://github.com/Lucasaielo/
     layout:
       position: footer
       priority: 50
