@@ -1,5 +1,5 @@
 ---
-title: Mapa Mental em Canvas
+title: Mapas Mentais
 draft: false
 tags:
   - seedling
