@@ -25,20 +25,13 @@ Em certo ponto, os erros passam a ser a arte em si. Você passa a buscar os erro
 A conta no instagram [unloesen](https://www.instagram.com/unloesen/) faz uma coleção de erros encontrados pelas ruas:
 
 
-![239](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-4.png)
-
-![269](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-3.png)
-
-![445](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-11.png)
-
-![244](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-10.png)
-
-![191](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-9.png)
-
+| ![364](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-11.png) | ![275](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-10.png) |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| ![300](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-4.png)  | ![248](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-3.png)  |
 Todos esses erros têm uma história. Eles colocam alguma atitude sobre um local que geralmente se ignora o fato de ter sido feito por humanos. Mas o desencaixe dos pisos, a falta de organização dos bueiros, as pegadas de alguém que passou pelo concreto úmido trazem essa presença humana de volta.
 
 ![](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-16.png?w=1024)
-<div style="background-color: --secondary; color: --dark;">
+<div style="background-color: #d1081c;">
 Até os pisos de caquinho, famosos na Grande São Paulo, vêm da utilização de cacos quebrados, que eram mais baratos.  
 A criatividade ao usar as peças "erradas" criou uma estética tão forte que os caquinhos passaram a valer mais do que o azulejo inteiro.
 </div>
@@ -54,12 +47,12 @@ A emulação de um erro de uma mídia em outra é extremamente comum, para ressa
 
 O mundo da tatuagem é repleto de exemplos
 
-![](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-12.png?w=637)
+![447](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-12.png?w=637)
 
 O estilo sketch emula rabiscos de grafite no papel, trazendo hachuras, linhas que não se encontram e densidades inconsistentes  
 ([Por ateliedecarvao](https://www.instagram.com/ateliedecarvao/))
 
-![](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-13.png?w=656)
+![443](https://volcano882.wordpress.com/wp-content/uploads/2026/01/image-13.png?w=656)
 
 Aqui as manchas da aquarela são replicadas, tanto dentro da própria arte quanto vazando das linhas guia e até como acentos de cor ao redor da peça principal  
 ([Por Jonny.ink](https://www.instagram.com/jonny.ink/))

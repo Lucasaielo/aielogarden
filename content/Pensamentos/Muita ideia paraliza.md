@@ -5,7 +5,7 @@ tags:
   - evergreen
 ---
 
-<div style="background-color: --secondary;">
+<div style="background-color: #d1081c;">
 Quero fazer várias coisas ao mesmo tempo  
 não consigo aplicar todas no mesmo projeto  
 nem decidir qual manter e qual retirar  
@@ -28,7 +28,7 @@ Se você ainda está decidindo se vai pintar, desenhar, usar caneta, lápis, des
 
 ---
 
-<div style="background-color: --secondary;">
+<div style="background-color: #d1081c;">
 Talvez deixar o acaso resolver possa ser uma opção.  
 *Ale Acta Est*
 Coloque suas opções em uma tabela e jogue um dado, simplesmente faça oq a sorte te mandar. Isso ainda requer aceitar a sorte, se satisfazer em executar o que o dado escolheu pra você, sem questionar.  
@@ -56,7 +56,7 @@ Ao mesmo tempo, mais de uma pessoa traz mais ideias, somando ao total, o que pod
 A pressão do tempo também é uma faca de dois gumes. Para coisas como "O que vou almoçar hoje", a pressão de ter que escolher logo parar que possa comer dentro do horário pode ser útil para que se defina algo a ser feito. Afinal, em casos como esse pode realmente se aplicar o "Feito é melhor do que perfeito".  
 Por outro lado, algumas escolhas têm limite de tempo, mas são muito mais definidoras, como definir qual faculdade fazer ao sair da escola. O ideal é decidir ali naquele mesmo ano que você está saindo, para ir atrás de prestar vestibular e tentar entrar no curso. Mas como decidir rápido algo que vai definir a sua vida toda? A pressão se torna paralizante, e voltamos ao estágio inicial.
 
-<div style="background-color: --secondary;">
+<div style="background-color: #d1081c;">
 Toda escolha implica em várias perdas. Temos que aceitar as perdas de cada escolha e, no máximo, pensar em como reaplicar essas perdas no futuro, se possível, mas não contar com isso.  
 Escolher o que faz mais sentido no momento e aceitar o que se pode perder com isso.  
 Às vezes a gente acaba só perdendo, mas isso faz parte da vida. Ainda assim, a experiência de ter feito é um ganho pro futuro. E deixar de fazer também é perder algo, mesmo que seja menos perceptível no momento
