@@ -16,8 +16,9 @@
 		{"id":"03262ce89eb3a6d8","type":"text","text":"Ou usam um acessório pra pendurar um item. O próprio acessório vira decorativo","x":-650,"y":-648,"width":250,"height":127},
 		{"id":"7d158ba8e5715917","type":"text","text":"Mosquetão","x":-650,"y":-390,"width":250,"height":60},
 		{"id":"2e2c56e477c851ba","type":"text","text":"Chaveiro","x":-990,"y":-100,"width":250,"height":60},
-		{"id":"143fd2d007a250d3","x":-495,"y":-1160,"width":440,"height":140,"type":"text","text":"**Penduricalhos como Decoração**\n #seedling "},
-		{"id":"52375ecf5be282aa","x":-925,"y":-1660,"width":400,"height":640,"type":"file","file":"content/Mapas Mentais/index.md"}
+		{"id":"143fd2d007a250d3","type":"text","text":"**Penduricalhos como Decoração**\n #seedling ","x":-495,"y":-1160,"width":440,"height":140},
+		{"id":"52375ecf5be282aa","type":"file","file":"content/Mapas Mentais/index.md","x":-925,"y":-1660,"width":400,"height":640},
+		{"id":"a21fce7a5fdd7c53","x":-455,"y":-1840,"width":400,"height":400,"type":"file","file":"content/Pensamentos/Apreciação e emulação de erros na arte.md"}
 	],
 	"edges":[
 		{"id":"3de570e046c54107","fromNode":"1902b482c37b80f4","fromSide":"bottom","toNode":"4ee889a71d64b8fb","toSide":"top"},
