@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Arte\\DigitalGarden\\quartz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arte\\DigitalGarden\\quartz\\quartz.config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quartz.config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arte\\DigitalGarden\\quartz\\quartz\\styles\\custom.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quartz\\styles\\custom.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arte\\DigitalGarden\\quartz\\quartz.config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quartz.config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "custom.scss",
               "DocumentMoniker": "D:\\Arte\\DigitalGarden\\quartz\\quartz\\styles\\custom.scss",
               "RelativeDocumentMoniker": "quartz\\styles\\custom.scss",
               "ToolTip": "D:\\Arte\\DigitalGarden\\quartz\\quartz\\styles\\custom.scss",
               "RelativeToolTip": "quartz\\styles\\custom.scss",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2026-10-14T22:49:40.393Z"
+              "WhenOpened": "2026-10-16T01:51:06.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "quartz.config.yaml",
               "DocumentMoniker": "D:\\Arte\\DigitalGarden\\quartz\\quartz.config.yaml",
               "RelativeDocumentMoniker": "quartz.config.yaml",
               "ToolTip": "D:\\Arte\\DigitalGarden\\quartz\\quartz.config.yaml",
               "RelativeToolTip": "quartz.config.yaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2026-10-14T22:18:01.252Z",
               "EditorCaption": ""
