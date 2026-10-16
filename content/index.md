@@ -1,10 +1,14 @@
 ---
-title: index
+title: Home
 draft: false
 tags:
 ---
-Um pequeno jardim de ideias
+## Um pequeno jardim de ideias
+
+---
 
 Só clica em alguma coisa e começa a ler, não pensa muito, [[Muita ideia paraliza]]
 
-Pode olhar também por [/tags] ou  [#] ou [pagina de tags](https://lucasaielo.github.io/aielogarden/tags/)
+Pode olhar também [[tags/|All Tags]]
+
+Ou clicar no gráfico na direita pra ver as conexões entre todas as páginas (Ctrl+G)
