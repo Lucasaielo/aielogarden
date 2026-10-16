@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\content",
+    "\\content\\attachments",
     "\\quartz",
+    "\\quartz\\components",
     "\\quartz\\plugins",
-    "\\quartz\\plugins\\transformers"
+    "\\quartz\\plugins\\transformers",
+    "\\quartz\\static"
   ],
+  "SelectedNode": "\\quartz\\styles",
   "PreviewInSolutionExplorer": false
 }
