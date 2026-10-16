@@ -13,4 +13,6 @@ Pode olhar também [[tags/|All Tags]]
 
 Ou clicar no gráfico na direita pra ver as conexões entre todas as páginas (Ctrl+G)
 
+---
+
 ![[AieloGarden_Icon.png|219]]
