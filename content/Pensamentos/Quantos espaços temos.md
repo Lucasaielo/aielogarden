@@ -5,6 +5,42 @@ tags:
   - seedling
   - ensaio
 ---
+Quantos espaços nós temos nos dias de hoje?
+
+O conceito vem da ideia de que a sua casa é seu primeiro espaço, onde vc convive com sua família, descansa, recebe amigos, entre outros.
+O segundo espaço é o trabalho, o espaço do dever, a escola/faculdade também pode ser um segundo espaço. Lá você também tem algum lazer, ainda que na hora do café, e interage com colegas.
+Já o terceiro espaço é o espaço de lazer, um barzinho, uma praça, um centro esportivo.
+A complexidade do terceiro espaço já vem do fato de que ele requer uma consistência que não é padrão como nos dois primeiros. Você precisa de um espaço que acolha sua consistência.
+
+Um bom exemplo de terceiro espaço é a praça onde os velhinho jogam dominó. É um espaço público, onde qualquer pessoa pode aparecer e participar, ele cultiva uma comunidade, todos se conhecem e criam laços, e tem um objetivo em comum, que é jogar dominó.
+Uma academia tem a consistência, mas muitas vezes não tem a comunidade e o pertencimento, se sua academia fecha, vc acha outra e não perdeu nada, em muitos casos.
+
+Eu poderia desenvolver mais sobre terceiros espaços e como não temos muitos deles hoje em dia, mas isso vai pra outro pensamento, lá em [[Terceiro Espaço]].
+
+---
+
+Algo novo é a existência de espaços digitais.
+
+No passado, o mundo digital estava preso a um lugar fixo. Você tinha que ir até o computador para navegar na internet, você se abstraia de um espaço físico pra entrar no digital.
+Isso até criava terceiros espaços ao redor de um espaço digital, como as lan houses. Muita gente se reunia pra entrar junto no mundo digital, e isso gerava uma comunidade.
+
+Com o advento dos smartphones, a internet deixou de ter um espaço físico definido e passou a permear todos os outros espaços.
+
+Ao mesmo tempo, os espaços também migraram pra internet, quase como uma Matrix, temos versões dos espaços lá dentro:
+O primeiro espaço digital são suas redes privadas, onde você posta o que gosta, interage com amigos, fala com familiares.
+Seu segundo espaço pode ser também uma rede social, um grupo do whatsapp, uma página online, é lá que você trabalha, é por lá que você interage com seus colegas.
+E o terceiro espaço digital é o youtube, netflix, as próprias redes sociais, jogos, etc.
+
+Pelos exemplos aí da pra notar que as próprias redes sociais já tomam uma boa parte do que é a internet, e podem até ser consideradas uma segunda camada de espaços dentro dessa matrix. Um inception de espaços digitais.
+Muita gente sequer navega mais na internet, só está realmente dentro de 2 ou 3 redes sociais pré delimitadas, sem nem imaginar que existe uma barra de URL onde você pode encontrar outros sites. Pode até se dizer que [[Quase ninguém navega na internet mais]].
+
+---
+
+A interação entre esses espaços físicos e digitais é onde nós estamos nos perdendo.
+
+E a obsessão da nova geração com os espaços liminares pode ser um reflexo disso
+
+---
 O conceito parte de terceiros espaços
 Falar sobre como tem um multiverso de espaços, onde vc pode ter espaços fisicos ou digitais, e pode estar em 2 deles ao mesmo tempo e como isso confunde as divisoes entre casa-trabalho-lazer
 
