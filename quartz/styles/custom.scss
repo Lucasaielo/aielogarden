@@ -22,9 +22,26 @@
     font-size: 1.5rem !important;
     font-weight: bold !important;
 }
-// Folder Names
 
+// Folder Names
 .folder-outer a {
     font-size: 1.0rem !important;
     color: var(--dark) !important;
+}
+
+//Moves Mobile Hamburger Menu a bit lower to avoid overlap   
+.mobile-no-scroll .explorer-ul.overflow{
+    padding-top: 2.5rem;
+}
+
+//Stops Body from overflowing to the right
+@media (max-width: 800px) {
+    .page > #quartz-body > .center,
+    .page > #quartz-body > footer {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        //padding-right: 1rem !important;
+        box-sizing: border-box !important;
+    }
 }
