@@ -7,7 +7,7 @@ tags:
 
 ---
 
-Por definição, o que você tem é exatamente o que você precisa pra produzir o seu melhor trabalho.
+> ==🔴**Por definição, o que você tem é exatamente o que você precisa pra produzir o seu melhor trabalho.**==
 
 Só clica em alguma coisa e começa a ler, não pensa muito, [[Muita ideia paralisa]]
 
