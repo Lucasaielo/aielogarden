@@ -5,7 +5,7 @@ tags:
   - seedling
   - ensaio
 ---
-Quantos espaços nós temos nos dias de hoje?
+# Quantos espaços nós temos nos dias de hoje?
 
 O conceito vem da ideia de que a sua casa é seu primeiro espaço, onde vc convive com sua família, descansa, recebe amigos, entre outros.
 O segundo espaço é o trabalho, o espaço do dever, a escola/faculdade também pode ser um segundo espaço. Lá você também tem algum lazer, ainda que na hora do café, e interage com colegas.
@@ -18,6 +18,7 @@ Uma academia tem a consistência, mas muitas vezes não tem a comunidade e o per
 Eu poderia desenvolver mais sobre terceiros espaços e como não temos muitos deles hoje em dia, mas isso vai pra outro pensamento, lá em [[Terceiro Espaço]].
 
 ---
+## Espaços Digitais
 
 Algo novo é a existência de espaços digitais.
 
@@ -35,6 +36,7 @@ Pelos exemplos aí da pra notar que as próprias redes sociais já tomam uma boa
 Muita gente sequer navega mais na internet, só está realmente dentro de 2 ou 3 redes sociais pré delimitadas, sem nem imaginar que existe uma barra de URL onde você pode encontrar outros sites. Pode até se dizer que [[Quase ninguém navega na internet mais]].
 
 ---
+## Interação entre espaços
 
 A interação entre esses espaços físicos e digitais é onde nós estamos nos perdendo.
 
@@ -44,12 +46,12 @@ Ou você pode estar no seu terceiro espaço de lazer e no trabalho ao mesmo temp
 Essa multiplicidade tem camadas ainda porque enquanto os espaços físicos eram separados, os espaços digitais podem viver no mesmo espaço físico.
 Seu quarto pode ser todos os 3 espaços ao mesmo tempo, apenas ao se sentar no computador, ou até mesmo abrir o celular, você acessa 3 abas - conversa com amigos, app do trabalho e app de música. 3 espaços.
 
-O mundo digital também carece de espaços liminares, a internet não tem corredores, rodoviárias, aeroportos, a passagem de um lugar pro outro é instantânea, o máximo que você precisa é tomar uma decisão de ir pra um lugar
+==🔴A obsessão da nova geração com os espaços liminares pode ser um reflexo disso.==
 
-E a obsessão da nova geração com os espaços liminares pode ser um reflexo disso.
+O mundo digital carece de espaços liminares, a internet não tem corredores, rodoviárias, aeroportos, a passagem de um lugar pro outro é instantânea, o máximo que você precisa é tomar uma decisão de ir pra um lugar. No início dos computadores, as coisas eram muito mais lentas para carregar, e as telas de carregamento serviam muito como os espaços liminares.
+
+![[Espaços Liminares e Telas de Carregamento#Telas de carregamento]]
 
 ---
-O conceito parte de terceiros espaços
-Falar sobre como tem um multiverso de espaços, onde vc pode ter espaços físicos ou digitais, e pode estar em 2 deles ao mesmo tempo e como isso confunde as divisões entre casa-trabalho-lazer
 
-Mostrar também como esse monte de opções ao mesmo tempo é um problema, já que [[Muita ideia paralisa]]
+Esse monte de opções de espaços estar disponível ao mesmo tempo é um problema, já que [[Muita ideia paralisa]]
