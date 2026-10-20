@@ -53,5 +53,9 @@ O mundo digital carece de espaços liminares, a internet não tem corredores, ro
 ![[Espaços Liminares e Telas de Carregamento#Telas de carregamento]]
 
 ---
+## Muitas opções simultâneas
 
 Esse monte de opções de espaços estar disponível ao mesmo tempo é um problema, já que [[Muita ideia paralisa]]
+
+A criação do scroll infinito está diretamente atrelada a não deixar sua mente parar para fazer escolhas. Você pode desligar o cérebro e só aceitar o que continua vindo, tudo se mistura em um grande feed infinito.
+As propagandas, que, na TV, são claramente pausas onde é costume sair da sala pra fazer outra coisa enquanto aguarda seu programa voltar, na internet se misturam ao feed, tudo pode ser um ad, até um vídeo normal de alguém falando é tornado um propaganda de seu próprio perfil de influenciador. O clássico "Curte e me segue" ao final dos vídeos é um call to action de vendas.
