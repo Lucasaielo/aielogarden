@@ -32,7 +32,7 @@ Talvez a resposta esteja no oposto
 
 ---
 
-No começo do uso dos computadores pessoais, seu preço o fazia pouco acessível e, ainda que você tivesse acesso, o tamanho e complexidade da máquina relegava-a a uma sala específica, em seu móvel específico. O mundo digital tinha seu espaço físico, mas hoje em dia [[Quantos espaços temos]]?
+No começo do uso dos computadores pessoais, seu preço o fazia pouco acessível e, ainda que você tivesse acesso, o tamanho e complexidade da máquina relegava-a a uma sala específica, em seu móvel específico. O mundo digital tinha seu espaço físico, mas hoje em dia [[Quantos espaços temos e a falta de espaços liminares]]?
 
 Acessar o computador exigia um ritual. Ir até uma lan house para se conectar, fazendo com que você ainda interaja com pessoas de lá, criando um terceiro espaço, ainda que você vá até lá para se imergir totalmente no computador, sua presença física entre outros ainda é capaz de criar um senso de comunidade local.
 

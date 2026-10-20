@@ -12,7 +12,7 @@ tags:
  
  Algo importante de destacar é a escala do boicote. É perceptível o quanto tudo parou para Charles Boycott, desde serviços, inquilinos e até cartas.
  Hoje em dia, com a globalização, esse nível de boicote é impossível de fazer com empresas multinacionais, que estão distribuídas entre muitos espaços.
- Outro problema de boicotes atualmente é o efeito Streisand, podemos imaginar [[Quantos espaços temos]], e quanto as ideias mudam de um pra outro. Um boicote feito por um grupo pode trazer mais visibilidade de outro grupo, e causar o efeito oposto.
+ Outro problema de boicotes atualmente é o efeito Streisand, podemos imaginar [[Quantos espaços temos e a falta de espaços liminares]], e quanto as ideias mudam de um pra outro. Um boicote feito por um grupo pode trazer mais visibilidade de outro grupo, e causar o efeito oposto.
 
 Entretanto, a ideia de pegar a comunidade local e se unir pra uma causa pode ser aplicada de forma mais ativa e positiva, além de ter um efeito local concentrado mais forte, em empresas de menor porte.
 

@@ -1,5 +1,5 @@
 ---
-title: Quantos espaços temos?
+title: Quantos espaços temos e a falta de espaços liminares
 draft: false
 tags:
   - seedling
@@ -38,10 +38,18 @@ Muita gente sequer navega mais na internet, só está realmente dentro de 2 ou 3
 
 A interação entre esses espaços físicos e digitais é onde nós estamos nos perdendo.
 
-E a obsessão da nova geração com os espaços liminares pode ser um reflexo disso
+Ao mesmo tempo você pode estar no trabalho e em casa, se um parente te mandar uma mensagem.
+Ou você pode estar no seu terceiro espaço de lazer e no trabalho ao mesmo tempo, caso seu Slack te dê uma notificação.
+
+Essa multiplicidade tem camadas ainda porque enquanto os espaços físicos eram separados, os espaços digitais podem viver no mesmo espaço físico.
+Seu quarto pode ser todos os 3 espaços ao mesmo tempo, apenas ao se sentar no computador, ou até mesmo abrir o celular, você acessa 3 abas - conversa com amigos, app do trabalho e app de música. 3 espaços.
+
+O mundo digital também carece de espaços liminares, a internet não tem corredores, rodoviárias, aeroportos, a passagem de um lugar pro outro é instantânea, o máximo que você precisa é tomar uma decisão de ir pra um lugar
+
+E a obsessão da nova geração com os espaços liminares pode ser um reflexo disso.
 
 ---
 O conceito parte de terceiros espaços
-Falar sobre como tem um multiverso de espaços, onde vc pode ter espaços fisicos ou digitais, e pode estar em 2 deles ao mesmo tempo e como isso confunde as divisoes entre casa-trabalho-lazer
+Falar sobre como tem um multiverso de espaços, onde vc pode ter espaços físicos ou digitais, e pode estar em 2 deles ao mesmo tempo e como isso confunde as divisões entre casa-trabalho-lazer
 
-Mostrar também como esse monte de opções ao mesmo tempo é um problema, já que [[Muita ideia paraliza]]
+Mostrar também como esse monte de opções ao mesmo tempo é um problema, já que [[Muita ideia paralisa]]

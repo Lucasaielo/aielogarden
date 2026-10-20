@@ -3,16 +3,17 @@ title: Home
 draft: false
 tags:
 ---
-## Um pequeno jardim de ideias
+## Um jardim de ideias
 
 ---
 
-Só clica em alguma coisa e começa a ler, não pensa muito, [[Muita ideia paraliza]]
+Por definição, o que você tem é exatamente o que você precisa pra produzir o seu melhor trabalho.
+
+Só clica em alguma coisa e começa a ler, não pensa muito, [[Muita ideia paralisa]]
 
 Pode olhar também [[tags/|All Tags]]
 
 Ou clicar no gráfico na direita pra ver as conexões entre todas as páginas (Ctrl+G)
 
 ---
-
-![[AieloGarden_Icon.png|219]]
+<p align="center"> <img src="attachments/aielogarden_icon.png" width= "250" /> </p>

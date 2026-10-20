@@ -1,5 +1,5 @@
 ---
-title: Muita ideia paraliza
+title: Muita ideia paralisa
 draft: false
 tags:
   - evergreen
