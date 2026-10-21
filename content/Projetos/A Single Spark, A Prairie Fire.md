@@ -9,6 +9,8 @@ O projeto de alguns dos criadores de Disco Elysium que já me atraiu de cara pel
 Instantaneamente inspirado, eu abri o blender e fiz um singelo projeto em 3D:
 O casebre em chamas, o que seria uma pequena fagulha nesse processo todo.
 
+![[PrairieFire_LucasAielo.mp4]]
+
 ![](https://x.com/lucasaielo/status/1845999678237602178)
 
 O twitter oficial do projeto respondeu meu post com "Obrigado Lucas! Poderia assistir para sempre!". E eu já fiquei feliz com o reconhecimento.
