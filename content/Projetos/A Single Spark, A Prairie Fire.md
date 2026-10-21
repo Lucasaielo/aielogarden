@@ -22,8 +22,8 @@ Mas Summer Eternal é um coletivo, um grupo de artistas unidos pra criar um proj
 
 Aleksandar Gavrilovic entrou em contato comigo para pedir permissão pra incluir minha arte à Antologia. Eu poderia fazer parte de todo esse projeto, estar lá junto com gente que eu admiro imensamente, desde o pessoal que trabalhou em um dos meus jogos favoritos até Ted Chiang, autor do livro que gerou meu filme favorito : A chegada, entre muitos outros artistas incríveis.
 
-E agora eu estaria publicado em um livro junto com eles.
+E agora eu estou publicado em um livro junto com eles e ainda vou receber uma cópia! Além de fazer parte do coletivo como uma das pessoas que participou da compra da Antologia.
 
-Esse foi o fogo de pradaria acendendo, dois anos depois de uma pequena fagulha que foi postar essa arte no twitter.
+Esse foi o fogo de pradaria queimando, dois anos depois de uma pequena fagulha que foi postar essa arte no twitter.
 
 O fogo continua queimando, e mais projetos virão daqui.
