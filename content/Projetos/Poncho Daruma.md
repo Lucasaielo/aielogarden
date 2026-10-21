@@ -19,7 +19,7 @@ Minha visita foi especialmente por gostar muito do Yohji Yamamoto e querer ver a
 ![[Kansai_Yamamoto_VogueUK_1971.jpg]]
 
 A peça é uma espécie de poncho enorme com zíper na frente e um motivo de palhaço.
-A escala, as cores fortes e contrastantes chamaram demais minha atenção e fiquei pensando como seria vestir uma peça assim.
+Já sabemos que preto é minha ![Cor Favorita], mas também a escala da peça, as cores fortes e contrastantes chamaram demais minha atenção e fiquei pensando como seria vestir uma peça assim.
 
 Ao mesmo tempo, eu já vinha acompanhando os vídeos do Mutsu
 
@@ -27,4 +27,4 @@ Ao mesmo tempo, eu já vinha acompanhando os vídeos do Mutsu
 
 E o processo dele me parecia muito divertido de fazer, além de não exigir nenhuma técnica insanamente complicada, só paciência e uma execução muito bem feita, além dos designs que são incríveis por si só.
 
-Dai surgiu o projeto Daruma
+Dai surgiu o projeto Daruma.

@@ -1,7 +1,8 @@
 ---
-title: "A Single Spark, A Prairie Fire"
+title: A Single Spark, A Prairie Fire
 draft: false
 tags:
+  - sapling
 ---
 Tudo começou com [Summer Eternal](https://summereternal.com/)
 O projeto de alguns dos criadores de Disco Elysium que já me atraiu de cara pela estética do site e a frase de Mao Zedong que é muito inspiradora e se provou real nesse projeto mesmo.
