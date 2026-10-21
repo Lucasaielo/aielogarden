@@ -46,7 +46,7 @@ Ou você pode estar no seu terceiro espaço de lazer e no trabalho ao mesmo temp
 Essa multiplicidade tem camadas ainda porque enquanto os espaços físicos eram separados, os espaços digitais podem viver no mesmo espaço físico.
 Seu quarto pode ser todos os 3 espaços ao mesmo tempo, apenas ao se sentar no computador, ou até mesmo abrir o celular, você acessa 3 abas - conversa com amigos, app do trabalho e app de música. 3 espaços.
 
-==🔴A obsessão da nova geração com os espaços liminares pode ser um reflexo disso.==
+A obsessão da nova geração com os espaços liminares pode ser um reflexo disso.
 
 O mundo digital carece de espaços liminares, a internet não tem corredores, rodoviárias, aeroportos, a passagem de um lugar pro outro é instantânea, o máximo que você precisa é tomar uma decisão de ir pra um lugar. No início dos computadores, as coisas eram muito mais lentas para carregar, e as telas de carregamento serviam muito como os espaços liminares.
 
