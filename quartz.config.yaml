@@ -142,6 +142,9 @@ plugins:
     enabled: true
   - source: "@quartz-community/graph"
     enabled: true
+    options:
+        localGraph:
+            depth: 2
     layout:
       position: right
       priority: 10
