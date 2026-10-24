@@ -20,4 +20,5 @@ O primeiro projeto de solda foi um grande escorregador, como uma atração pra s
 ## Referências
 
 [This is Colossal - Ai Pioppi Kinetic Carnival](https://www.thisiscolossal.com/2013/10/ai-pioppi-kinetic-carnival/)
+
 [Atlas Obscura - Ai Pioppi Playground]( https://www.atlasobscura.com/places/ai-pioppi-playground)
