@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"2241e5fe3ef069a5","x":-340,"y":-480,"width":560,"height":700,"type":"group","label":"O Animal na Arte Decorativa"},
+		{"id":"3b98c1c0d2efe19c","type":"link","url":"https://archive.org/details/gri_33125013920190","x":-200,"y":-200,"width":400,"height":400},
+		{"id":"cdbb4170689f5132","type":"text","text":"**Das Thier in decorativen Kunst**\nBy Anton Seder\n\nLivro de dragões decorativos, referências de criaturas","x":-320,"y":-460,"width":393,"height":148}
+	],
+	"edges":[
+		{"id":"704a67bef1cc612e","fromNode":"cdbb4170689f5132","fromSide":"bottom","toNode":"3b98c1c0d2efe19c","toSide":"top"}
+	]
+}
