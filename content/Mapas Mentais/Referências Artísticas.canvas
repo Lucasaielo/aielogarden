@@ -1,10 +1,31 @@
 {
 	"nodes":[
-		{"id":"2241e5fe3ef069a5","x":-340,"y":-480,"width":560,"height":700,"type":"group","label":"O Animal na Arte Decorativa"},
-		{"id":"3b98c1c0d2efe19c","type":"link","url":"https://archive.org/details/gri_33125013920190","x":-200,"y":-200,"width":400,"height":400},
-		{"id":"cdbb4170689f5132","type":"text","text":"**Das Thier in decorativen Kunst**\nBy Anton Seder\n\nLivro de dragões decorativos, referências de criaturas","x":-320,"y":-460,"width":393,"height":148}
+		{"id":"69c50fa885b09fc9","x":-1080,"y":-1680,"width":1480,"height":780,"type":"group","label":"Coleções interessantes do Internet Archive"},
+		{"id":"02cfd6f5828cab78","x":960,"y":-504,"width":1000,"height":760,"type":"group","label":"Pontos de Ônibus Soviéticos"},
+		{"id":"85d82f2263eb43e2","x":1010,"y":-1700,"width":490,"height":820,"type":"group","label":"Evento de Arte de Crianças e Adolescentes"},
+		{"id":"2241e5fe3ef069a5","type":"group","x":-360,"y":-520,"width":560,"height":716,"label":"O Animal na Arte Decorativa"},
+		{"id":"3b98c1c0d2efe19c","type":"link","url":"https://archive.org/details/gri_33125013920190","x":-220,"y":-224,"width":400,"height":400},
+		{"id":"cdbb4170689f5132","type":"text","text":"**Das Thier in decorativen Kunst**\nBy Anton Seder\n\nLivro de dragões decorativos, referências de criaturas","x":-340,"y":-484,"width":393,"height":148},
+		{"id":"dc17e697dbf4e79c","x":1460,"y":-248,"width":400,"height":306,"type":"link","url":"https://www.herwigphoto.com/Soviet-Bus-Stops"},
+		{"id":"765efe90ed94d15d","type":"text","text":"**Soviet Bus Stops** \nBy Christopher Herwig\n\nFilme sobre os pontos de ônibus soviéticos, peças de arte brutalista incriveis de todos os tipos","x":980,"y":-484,"width":400,"height":160},
+		{"id":"56e5ed8dc7fc09f3","type":"link","url":"https://www.sovietbusstops.com/","x":980,"y":-204,"width":400,"height":400},
+		{"id":"148225a4b4723137","x":-540,"y":-1380,"width":400,"height":400,"type":"link","url":"https://archive.org/details/manuals"},
+		{"id":"369f66c78e96b0b7","x":-540,"y":-1580,"width":300,"height":120,"type":"text","text":"**The Manual Library**\n\nColeção de manuais, instruções de milhares de itens."},
+		{"id":"c8b5e2b0bc7909d3","x":-1010,"y":-1380,"width":400,"height":400,"type":"link","url":"https://archive.org/details/ravezines"},
+		{"id":"ef823b0eeb3577d4","type":"text","text":"**RaveZines**\n\nColeção de scans de Zines da cultura de Raves","x":-1010,"y":-1580,"width":360,"height":120},
+		{"id":"4377e968acdbc82a","x":-80,"y":-1380,"width":400,"height":400,"type":"link","url":"https://archive.org/details/Fine-Art-History?page=3"},
+		{"id":"1d12a48048533d78","type":"text","text":"**Fine Art History**\n\nColeção de peças de arte variadas","x":-60,"y":-1580,"width":300,"height":120},
+		{"id":"d06e442fb7e49f4b","x":1080,"y":-1320,"width":400,"height":420,"type":"link","url":"https://youngartists.royalacademy.org.uk/exhibitions/2026"},
+		{"id":"4cb28d4b69283433","type":"text","text":"**Young Artist' Summer Show 2026**\n\nCompetição de arte para crianças e adolescentes.\nMuito interessante ver o quao refinadas as artes podem ser, até feitas por crianças muito pequenas.\n\nLegal também notar a liberdade de representação que crianças têm, ainda sem noções limitantes que se aprende mais tarde","x":1030,"y":-1680,"width":450,"height":260}
 	],
 	"edges":[
-		{"id":"704a67bef1cc612e","fromNode":"cdbb4170689f5132","fromSide":"bottom","toNode":"3b98c1c0d2efe19c","toSide":"top"}
+		{"id":"704a67bef1cc612e","fromNode":"cdbb4170689f5132","fromSide":"bottom","toNode":"3b98c1c0d2efe19c","toSide":"top"},
+		{"id":"ed312d15ede63feb","fromNode":"765efe90ed94d15d","fromSide":"bottom","toNode":"56e5ed8dc7fc09f3","toSide":"top"},
+		{"id":"154547011b54c99d","fromNode":"765efe90ed94d15d","fromSide":"right","toNode":"dc17e697dbf4e79c","toSide":"top"},
+		{"id":"31a8429c5fda147d","fromNode":"69c50fa885b09fc9","fromSide":"bottom","toNode":"2241e5fe3ef069a5","toSide":"top"},
+		{"id":"0f9a8304a617ea55","fromNode":"369f66c78e96b0b7","fromSide":"bottom","toNode":"148225a4b4723137","toSide":"top"},
+		{"id":"6ca3f9dd26a41b61","fromNode":"ef823b0eeb3577d4","fromSide":"bottom","toNode":"c8b5e2b0bc7909d3","toSide":"top"},
+		{"id":"6bc54bf6182118a2","fromNode":"1d12a48048533d78","fromSide":"bottom","toNode":"4377e968acdbc82a","toSide":"top"},
+		{"id":"70cc6b40226f7ae2","fromNode":"4cb28d4b69283433","fromSide":"bottom","toNode":"d06e442fb7e49f4b","toSide":"top"}
 	]
 }
