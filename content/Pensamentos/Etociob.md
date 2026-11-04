@@ -32,3 +32,10 @@ Aqui o Etociob ainda precisa ser evoluido. As reviews podem ser diretamente inve
 
 Mas quanto à depredação, ainda não sei exatamente o que poderia ser um contraponto positivo. Claro que pós depredação pode haver um esforço de reconstruir, mas não é essa a ideia do etociob. Talvez uma união de pessoas pra fazer alguma reforma física, como pintura de fachada, por exemplo?
 Isso acaba custando muito mais, tanto em dinheiro quanto em tempo do que apenas depredar, realmente não parece ter um correlativo direto fácil de executar.
+
+---
+
+Voltando aqui pra comentar que a maioria das empresas que apareceram em listas de boicote bolsonaristas realmente tiveram medo por algumas semanas, mas depois tiveram um aumento de vendas, vindo do lado da esquerda que, sabendo das listas, passou a frequentar os lugares.
+O efeito Streisand que apontei lá em cima se provando real.
+
+No mundo atual o boicote em si realmente é muito fraco com a polarização e todas as variáveis e efeitos mais drásticos precisam ser tomados pra terem os resultados esperados. A [[Reflexão sobre Radicalidade]] aponta isso também de forma geral. A direita entendeu que tem que ser mais extrema pra surtir real efeito.
