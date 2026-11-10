@@ -20,11 +20,10 @@ export const DefaultFrame: PageFrame = {
     left,
     right,
     footer,
-    sidebars,
   }: PageFrameProps) {
     return (
       <>
-        <div class="left sidebar" data-sidebar-mode={sidebars?.left ?? "fit"}>
+        <div class="left sidebar">
           {left.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}
@@ -50,7 +49,7 @@ export const DefaultFrame: PageFrame = {
             ))}
           </div>
         </div>
-        <div class="right sidebar" data-sidebar-mode={sidebars?.right ?? "fit"}>
+        <div class="right sidebar">
           {right.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}

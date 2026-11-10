@@ -1,6 +1,5 @@
 import { JSX } from "preact"
 import { QuartzComponent, QuartzComponentProps } from "../types"
-import type { SidebarMode } from "../../cfg"
 
 /**
  * Props passed to a PageFrame's render function.
@@ -19,11 +18,6 @@ export interface PageFrameProps {
   pageBody: QuartzComponent
   /** Components rendered after the page body */
   afterBody: QuartzComponent[]
-  /**
-   * Sidebar modes from `layout.sidebars` (default "fit"). Frames with sidebars put them on the
-   * sidebar element as `data-sidebar-mode`; the core stylesheet does the rest.
-   */
-  sidebars?: { left: SidebarMode; right: SidebarMode }
   /** Left sidebar components */
   left: QuartzComponent[]
   /** Right sidebar components */

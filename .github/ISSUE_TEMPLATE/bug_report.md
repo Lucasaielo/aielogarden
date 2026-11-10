@@ -28,19 +28,13 @@ You can help speed up fixing the problem by either
 1. providing a simple reproduction
 2. linking to your Quartz repository where the problem can be observed
 
-**Quartz info**
-Run `npx quartz info` in your Quartz folder and paste its output here. It lists your Quartz version, Node/npm/OS and every plugin with its version — no content or site URL is included.
+**Desktop (please complete the following information):**
 
-```
-Paste the output of `npx quartz info` here
-```
-
-(Quartz older than 5.1 doesn't have `npx quartz info`: give the Quartz version from `package.json` and the output of `git log -1 --format=%h`, plus your `node` and `npm` versions and OS.)
-
-**Browser** (for display problems): [e.g. Firefox 140, Safari on iOS 18]
-
-**Build output**
-If the build failed or printed warnings, paste the full output of `npx quartz build`, including the summary at the end.
+- Quartz Version: [e.g. v4.1.2]
+- `node` Version: [e.g. v18.16]
+- `npm` version: [e.g. v10.1.0]
+- OS: [e.g. iOS]
+- Browser [e.g. chrome, safari]
 
 **Additional context**
 Add any other context about the problem here.

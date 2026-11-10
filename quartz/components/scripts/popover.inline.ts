@@ -55,16 +55,12 @@ async function mouseEnterHandler(
     return
   }
 
-  // A page fetched ahead (prefetch.inline.ts) is used as is, instead of fetching it again.
-  const prefetched = await window.quartzPrefetch?.load(targetUrl)
-  const response = prefetched
-    ? undefined
-    : await fetchCanonical(targetUrl).catch((err) => {
-        console.error(err)
-      })
+  const response = await fetchCanonical(targetUrl).catch((err) => {
+    console.error(err)
+  })
 
-  if (!prefetched && !response) return
-  const rawContentType = prefetched?.contentType ?? response?.headers.get("Content-Type")
+  if (!response) return
+  const rawContentType = response.headers.get("Content-Type")
   if (!rawContentType) return
   const [contentType] = rawContentType.split(";")
   const [contentTypeCategory, typeInfo] = contentType.split("/")
@@ -97,7 +93,7 @@ async function mouseEnterHandler(
       }
       break
     default:
-      const contents = prefetched ? (prefetched.text ?? "") : await response!.text()
+      const contents = await response.text()
       const html = p.parseFromString(contents, "text/html")
       normalizeRelativeURLs(html, targetUrl)
       // prepend all IDs inside popovers to prevent duplicates
@@ -143,8 +139,3 @@ function setupPopovers() {
 
 document.addEventListener("nav", setupPopovers)
 document.addEventListener("render", setupPopovers)
-window.addEventListener("pageshow", (event) => {
-  if (!event.persisted) return
-  activeAnchor = null
-  document.querySelectorAll(".popover").forEach((popover) => popover.remove())
-})

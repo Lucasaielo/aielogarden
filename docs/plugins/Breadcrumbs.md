@@ -14,7 +14,7 @@ Navigation breadcrumb trail.
 > [!note]
 > For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
 
-See [[features/breadcrumbs|Breadcrumbs]] for detailed usage information.
+See [[plugins/Breadcrumbs]] for detailed usage information.
 
 ## Configuration
 
@@ -28,17 +28,13 @@ This plugin accepts the following configuration options:
 ### Default options
 
 ```yaml title="quartz.config.yaml"
-- source: "@quartz-community/breadcrumbs"
+- source: github:quartz-community/breadcrumbs
   enabled: true
   options:
     spacerSymbol: "❯"
     rootName: Home
     resolveFrontmatterTitle: true
     showCurrentPage: true
-  layout:
-    position: beforeBody
-    priority: 5
-    condition: not-index
 ```
 
 ## API
@@ -46,4 +42,4 @@ This plugin accepts the following configuration options:
 - Category: Component
 - Function name: `ExternalPlugin.Breadcrumbs()`.
 - Source: [`quartz-community/breadcrumbs`](https://github.com/quartz-community/breadcrumbs)
-- Install: `npx quartz plugin add @quartz-community/breadcrumbs`
+- Install: `npx quartz plugin add github:quartz-community/breadcrumbs`

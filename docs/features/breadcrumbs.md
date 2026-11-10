@@ -19,7 +19,7 @@ For example, here's what the default configuration looks like:
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: "@quartz-community/breadcrumbs"
+  - source: github:quartz-community/breadcrumbs
     enabled: true
     options:
       spacerSymbol: "❯"
@@ -29,14 +29,11 @@ plugins:
     layout:
       position: beforeBody
       priority: 5
-      condition: not-index # no breadcrumbs on the home page
 ```
 
 For the TS override approach:
 
 ```ts title="quartz.ts (override)"
-import * as ExternalPlugin from "./.quartz/plugins"
-
 // Must be placed before loadQuartzConfig()
 ExternalPlugin.Breadcrumbs({
   spacerSymbol: "❯",
@@ -53,5 +50,5 @@ You can also adjust where the breadcrumbs will be displayed by changing the `lay
 Want to customize it even more?
 
 - Removing breadcrumbs: remove the `breadcrumbs` entry from `quartz.config.yaml` or set `enabled: false`.
-- Install: `npx quartz plugin add @quartz-community/breadcrumbs`
+- Install: `npx quartz plugin add github:quartz-community/breadcrumbs`
 - Source: [`quartz-community/breadcrumbs`](https://github.com/quartz-community/breadcrumbs)

@@ -23,7 +23,7 @@ export const CreateArgv = {
   template: {
     string: true,
     alias: ["t"],
-    choices: ["default", "obsidian", "ttrpg", "blog", "docs"],
+    choices: ["default", "obsidian", "ttrpg", "blog"],
     describe: "template to use for initial configuration",
   },
   source: {
@@ -110,8 +110,7 @@ export const BuildArgv = {
   remoteDevHost: {
     string: true,
     default: "",
-    describe:
-      "hostname to use for the hot-reload WebSocket connection if you are not developing on localhost",
+    describe: "A URL override for the websocket connection if you are not developing on localhost",
   },
   bundleInfo: {
     boolean: true,

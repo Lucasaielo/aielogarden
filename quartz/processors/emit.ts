@@ -7,10 +7,6 @@ import { trace } from "../util/trace"
 import { BuildCtx } from "../util/ctx"
 import { StaticResources } from "../util/resources"
 import { styleText } from "util"
-import { prepareContentIndex } from "../plugins/builtins/contentIndex"
-import { attributeError, originOf } from "../util/pluginErrors"
-import { recordDiagnostic } from "../util/diagnostics"
-import { reportUnresolvedLinks } from "../util/linkReport"
 
 async function runEmitter(
   emitter: QuartzEmitterPluginInstance,
@@ -44,10 +40,7 @@ async function runEmitter(
       }
     }
   } catch (err) {
-    trace(
-      `Failed to emit from plugin \`${emitter.name}\``,
-      attributeError(err, { origin: originOf(emitter), stage: "emit" }) as Error,
-    )
+    trace(`Failed to emit from plugin \`${emitter.name}\``, err as Error)
   }
   return count
 }
@@ -82,8 +75,6 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
   // (e.g. sitemap, RSS, contentIndex.json used by the explorer sidebar).
   const contentWithVirtual =
     ctx.virtualPages.length > 0 ? [...content, ...ctx.virtualPages] : content
-  // Build the content index once; emitters read it from ctx.contentIndex.
-  prepareContentIndex(ctx, contentWithVirtual)
   const otherEmitters = cfg.plugins.emitters.filter(
     (e) => e.name !== "PageTypeDispatcher" && e.name !== "ComponentResources",
   )
@@ -93,12 +84,6 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
       runEmitter(emitter, ctx, contentWithVirtual, staticResources, log).catch((err) => {
         emitErrors++
         console.error(`Emitter "${emitter.name}" failed:`, err.message ?? err)
-        recordDiagnostic({
-          severity: "warning",
-          area: "emit",
-          plugin: originOf(emitter).displayName,
-          message: `Emitter "${emitter.name}" failed: ${err.message ?? err}. Output may be incomplete.`,
-        })
         return 0
       }),
     ),
@@ -112,5 +97,4 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
   }
 
   log.end(`Emitted ${emittedFiles} files to \`${argv.output}\` in ${perf.timeSince()}`)
-  reportUnresolvedLinks(ctx, contentWithVirtual)
 }

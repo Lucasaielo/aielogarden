@@ -4,7 +4,6 @@ import path from "path"
 import YAML from "yaml"
 import { installPlugins, parsePluginSource, regeneratePluginIndex } from "./gitLoader.js"
 import type { PluginSource, QuartzPluginsJson } from "./types.js"
-import { absorbingBuiltin } from "../builtins/index.js"
 
 function resolveConfigPath(): string {
   const configYamlPath = path.join(process.cwd(), "quartz.config.yaml")
@@ -31,9 +30,6 @@ function readPluginsJson(): QuartzPluginsJson | null {
 
 async function getExternalPluginSources(): Promise<PluginSource[]> {
   try {
-    // Loading quartz.ts runs the full config loader; its warnings are printed again by the build
-    // that follows (prebuild → build), so keep this pass quiet.
-    process.env.QUARTZ_CONFIG_QUIET = "1"
     const module = await import("../../../quartz.js")
     const config = module.default ?? module
     const externalPlugins = config.externalPlugins
@@ -50,10 +46,7 @@ async function getExternalPluginSources(): Promise<PluginSource[]> {
 }
 
 async function main() {
-  // Official plugins that are built into core now (crawl-links, …) are never installed.
-  const externalPlugins = (await getExternalPluginSources()).filter(
-    (source) => !absorbingBuiltin({ source, enabled: true }),
-  )
+  const externalPlugins = await getExternalPluginSources()
 
   if (externalPlugins.length === 0) {
     console.log("No external plugins to install.")

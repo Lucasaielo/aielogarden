@@ -19,23 +19,19 @@ export function getStaticResourcesFromPlugins(ctx: BuildCtx) {
     if (res?.additionalHead) {
       staticResources.additionalHead.push(...res.additionalHead)
     }
-    if (res?.assets) {
-      ;(staticResources.assets ??= []).push(...res.assets)
-    }
   }
 
   // if serving locally, listen for rebuilds and reload the page
   if (ctx.argv.serve) {
-    const wsHost = ctx.argv.remoteDevHost || "localhost"
+    const wsUrl = ctx.argv.remoteDevHost
+      ? `wss://${ctx.argv.remoteDevHost}:${ctx.argv.wsPort}`
+      : `ws://localhost:${ctx.argv.wsPort}`
 
     staticResources.js.push({
       loadTime: "afterDOMReady",
       contentType: "inline",
       script: `
-        // the dev server speaks plain ws unless it sits behind a TLS proxy,
-        // so follow the page instead of assuming
-        const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:"
-        const socket = new WebSocket(\`\${wsProtocol}//${wsHost}:${ctx.argv.wsPort}\`)
+        const socket = new WebSocket('${wsUrl}')
         // reload(true) ensures resources like images and scripts are fetched again in firefox
         socket.addEventListener('message', () => document.location.reload(true))
       `,

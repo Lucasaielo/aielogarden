@@ -4,7 +4,7 @@ tags:
   - component
 ---
 
-Quartz can add a comment section to your pages with the [[plugins/Comments|Comments]] plugin, so readers can leave comments on your site.
+Quartz also has the ability to hook into various providers to enable readers to leave comments on your site.
 
 > [!note]
 > For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
@@ -33,11 +33,11 @@ After entering both your repository and selecting the discussion category, Giscu
 
 ![[giscus-results.png]]
 
-Finally, in `quartz.config.yaml`, enable the comments plugin (it is in the default configuration but disabled) and fill in the values you got from above:
+Finally, in `quartz.config.yaml`, add the comments plugin with the following options (using the values you got from above):
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: "@quartz-community/comments"
+  - source: github:quartz-community/comments
     enabled: true
     options:
       provider: giscus
@@ -56,7 +56,6 @@ For the TS override approach:
 
 ```ts title="quartz.ts (override)"
 // If using quartz.ts overrides instead of YAML:
-import * as ExternalPlugin from "./.quartz/plugins"
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 
 const config = await loadQuartzConfig()
@@ -80,7 +79,7 @@ export const layout = await loadQuartzLayout({
 ```
 
 > [!note]
-> If the plugin is not in your configuration, install it first: `npx quartz plugin add @quartz-community/comments`
+> Install the comments plugin first: `npx quartz plugin add github:quartz-community/comments`
 
 ### Customization
 
@@ -96,7 +95,7 @@ type Options = {
     categoryId: string
 
     // Url to folder with custom themes
-    // defaults to 'https://${baseUrl}/static/giscus'
+    // defaults to 'https://${cfg.baseUrl}/static/giscus'
     themeUrl?: string
 
     // filename for light theme .css file
@@ -132,13 +131,13 @@ type Options = {
 
 #### Custom CSS theme
 
-Quartz supports custom themes for Giscus. By default Giscus loads `light.css` and `dark.css` from `https://<baseUrl>/static/giscus`, which Quartz ships in `quartz/static/giscus/` (this needs `baseUrl` to be set to your real domain). To use a custom CSS theme, place the `.css` file inside the `quartz/static/giscus` folder and set the configuration values.
+Quartz supports custom theme for Giscus. To use a custom CSS theme, place the `.css` file inside the `quartz/static` folder and set the configuration values.
 
 For example, if you have a light theme `light-theme.css`, a dark theme `dark-theme.css`, and your Quartz site is hosted at `https://example.com/`:
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: "@quartz-community/comments"
+  - source: github:quartz-community/comments
     enabled: true
     options:
       provider: giscus
@@ -150,7 +149,6 @@ plugins:
 ```
 
 ```ts title="quartz.ts (override)"
-import * as ExternalPlugin from "./.quartz/plugins"
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 
 const config = await loadQuartzConfig()
