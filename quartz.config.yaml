@@ -145,6 +145,9 @@ plugins:
     options:
         localGraph:
             depth: 2
+        globalGraph:
+            centerForce: 0.5
+            enableRadial: false
     layout:
       position: right
       priority: 10
