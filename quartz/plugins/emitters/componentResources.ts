@@ -2,13 +2,10 @@ import { createHash } from "crypto"
 import { FullSlug, joinSegments } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
 
-import { emitStaticAssets } from "./staticAssets"
 // @ts-ignore
 import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
-// @ts-ignore
-import prefetchScript from "../../components/scripts/prefetch.inline"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
@@ -26,10 +23,6 @@ import { Features, transform } from "lightningcss"
 import { transform as transpile } from "esbuild"
 import { write } from "./helpers"
 
-/**
- * Content hash for cache-busting file names (`postscript-<hash>.js`). Not a password or security
- * hash: code scanners flagging a "weak hash" here can be dismissed (#2571).
- */
 function hashContent(content: string | Buffer): string {
   return createHash("sha256").update(content).digest("hex").slice(0, 8)
 }
@@ -97,16 +90,11 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.css.push(popoverStyle)
   }
 
-  // Config values are written into the generated scripts as JSON string literals (`<` escaped),
-  // never spliced into code or nested string templates (#2571).
-  const js = (value: unknown) => JSON.stringify(String(value)).replace(/</g, "\\u003c")
-  const analytics = cfg.analytics
-
-  if (analytics?.provider === "google") {
+  if (cfg.analytics?.provider === "google") {
+    const tagId = cfg.analytics.tagId
     componentResources.afterDOMLoaded.push(`
-      const tagId = ${js(analytics.tagId)};
       const gtagScript = document.createElement('script');
-      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId);
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=${tagId}';
       gtagScript.defer = true;
       gtagScript.onload = () => {
         window.dataLayer = window.dataLayer || [];
@@ -114,19 +102,20 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
           dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', tagId, { send_page_view: false });
+        gtag('config', '${tagId}', { send_page_view: false });
         gtag('event', 'page_view', { page_title: document.title, page_location: location.href });
         document.addEventListener('nav', () => {
           gtag('event', 'page_view', { page_title: document.title, page_location: location.href });
         });
       };
-
+      
       document.head.appendChild(gtagScript);
     `)
-  } else if (analytics?.provider === "plausible") {
+  } else if (cfg.analytics?.provider === "plausible") {
+    const plausibleHost = cfg.analytics.host ?? "https://plausible.io"
     componentResources.afterDOMLoaded.push(`
       const plausibleScript = document.createElement('script');
-      plausibleScript.src = ${js(analytics.host ?? "https://plausible.io")} + '/js/script.manual.js';
+      plausibleScript.src = '${plausibleHost}/js/script.manual.js';
       plausibleScript.setAttribute('data-domain', location.hostname);
       plausibleScript.defer = true;
       plausibleScript.onload = () => {
@@ -139,68 +128,58 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
 
       document.head.appendChild(plausibleScript);
     `)
-  } else if (analytics?.provider === "umami") {
+  } else if (cfg.analytics?.provider === "umami") {
     componentResources.afterDOMLoaded.push(`
       const umamiScript = document.createElement("script");
-      umamiScript.src = ${js(analytics.host ?? "https://analytics.umami.is")} + "/" + ${js(analytics.script ?? "script.js")};
-      umamiScript.setAttribute("data-website-id", ${js(analytics.websiteId)});
+      umamiScript.src = "${cfg.analytics.host ?? "https://analytics.umami.is"}/script.js";
+      umamiScript.setAttribute("data-website-id", "${cfg.analytics.websiteId}");
       umamiScript.setAttribute("data-auto-track", "true");
       umamiScript.defer = true;
 
       document.head.appendChild(umamiScript);
     `)
-  } else if (analytics?.provider === "goatcounter") {
+  } else if (cfg.analytics?.provider === "goatcounter") {
     componentResources.afterDOMLoaded.push(`
-      window.goatcounter = { no_onload: true };
+      const goatcounterScriptPre = document.createElement('script');
+      goatcounterScriptPre.textContent = \`
+        window.goatcounter = { no_onload: true };
+      \`;
+      document.head.appendChild(goatcounterScriptPre);
 
-      const endpoint = "https://" + ${js(analytics.websiteId)} + "." + ${js(analytics.host ?? "goatcounter.com")} + "/count";
-      // Both routers emit an initial nav. Register before loading count.js so
-      // cached scripts cannot count it twice, and slow scripts cannot miss it.
-      let goatcounterLoaded = false;
-      let pendingPageviews = [];
-      document.addEventListener('nav', () => {
-        const pageview = { path: location.pathname, title: document.title };
-        if (goatcounterLoaded) {
-          goatcounter.count(pageview);
-        } else {
-          pendingPageviews.push(pageview);
-        }
-      });
-
+      const endpoint = "https://${cfg.analytics.websiteId}.${cfg.analytics.host ?? "goatcounter.com"}/count";
       const goatcounterScript = document.createElement('script');
-      goatcounterScript.src = ${js(analytics.scriptSrc ?? "https://gc.zgo.at/count.js")};
+      goatcounterScript.src = "${cfg.analytics.scriptSrc ?? "https://gc.zgo.at/count.js"}";
       goatcounterScript.defer = true;
       goatcounterScript.setAttribute('data-goatcounter', endpoint);
       goatcounterScript.onload = () => {
         window.goatcounter.endpoint = endpoint;
-        goatcounterLoaded = true;
-        pendingPageviews.forEach((pageview) => goatcounter.count(pageview));
-        pendingPageviews = [];
+        goatcounter.count({ path: location.pathname });
+        document.addEventListener('nav', () => {
+          goatcounter.count({ path: location.pathname });
+        });
       };
 
       document.head.appendChild(goatcounterScript);
     `)
-  } else if (analytics?.provider === "posthog") {
-    const options = [
-      `api_host: ${js(analytics.apiHost ?? analytics.host ?? "https://app.posthog.com")},`,
-      analytics.uiHost ? `ui_host: ${js(analytics.uiHost)},` : "",
-      analytics.personProfiles ? `person_profiles: ${js(analytics.personProfiles)},` : "",
-    ].join("\n        ")
-    // PostHog's loader snippet defines window.posthog (a stub queue until array.js loads)
+  } else if (cfg.analytics?.provider === "posthog") {
     componentResources.afterDOMLoaded.push(`
-      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-      window.posthog.init(${js(analytics.apiKey)}, {
-        ${options}
+      const posthogScript = document.createElement("script");
+      posthogScript.innerHTML= \`!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('${cfg.analytics.apiKey}', {
+        api_host: '${cfg.analytics.host ?? "https://app.posthog.com"}',
         capture_pageview: false,
       });
       document.addEventListener('nav', () => {
-        window.posthog.capture('$pageview', { path: location.pathname });
-      });
+        posthog.capture('$pageview', { path: location.pathname });
+      })\`
+
+      document.head.appendChild(posthogScript);
     `)
-  } else if (analytics?.provider === "tinylytics") {
+  } else if (cfg.analytics?.provider === "tinylytics") {
+    const siteId = cfg.analytics.siteId
     componentResources.afterDOMLoaded.push(`
       const tinylyticsScript = document.createElement('script');
-      tinylyticsScript.src = 'https://tinylytics.app/embed/' + encodeURIComponent(${js(analytics.siteId)}) + '.js?spa';
+      tinylyticsScript.src = 'https://tinylytics.app/embed/${siteId}.js?spa';
       tinylyticsScript.defer = true;
       tinylyticsScript.onload = () => {
         window.tinylytics.triggerUpdate();
@@ -208,26 +187,30 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
           window.tinylytics.triggerUpdate();
         });
       };
-
+      
       document.head.appendChild(tinylyticsScript);
     `)
-  } else if (analytics?.provider === "cabin") {
+  } else if (cfg.analytics?.provider === "cabin") {
     componentResources.afterDOMLoaded.push(`
       const cabinScript = document.createElement("script")
-      cabinScript.src = ${js(analytics.host ?? "https://scripts.withcabin.com")} + "/hello.js"
+      cabinScript.src = "${cfg.analytics.host ?? "https://scripts.withcabin.com"}/hello.js"
       cabinScript.defer = true
       document.head.appendChild(cabinScript)
     `)
-  } else if (analytics?.provider === "clarity") {
+  } else if (cfg.analytics?.provider === "clarity") {
     componentResources.afterDOMLoaded.push(`
-      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      const clarityScript = document.createElement("script")
+      clarityScript.innerHTML= \`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
       t=l.createElement(r);t.defer=1;t.src="https://www.clarity.ms/tag/"+i;
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", ${js(analytics.projectId)});
+      })(window, document, "clarity", "script", "${cfg.analytics.projectId}");\`
+      document.head.appendChild(clarityScript)
     `)
-  } else if (analytics?.provider === "matomo") {
+  } else if (cfg.analytics?.provider === "matomo") {
     componentResources.afterDOMLoaded.push(`
-      const _paq = window._paq = window._paq || [];
+      const matomoScript = document.createElement("script");
+      matomoScript.innerHTML = \`
+      let _paq = window._paq = window._paq || [];
 
       // Track SPA navigation
       // https://developer.matomo.org/guides/spa-tracking
@@ -240,14 +223,17 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
-        const u = "//" + ${js(analytics.host)} + "/";
-        _paq.push(['setTrackerUrl', u + 'matomo.php']);
-        _paq.push(['setSiteId', ${js(analytics.siteId)}]);
-        const d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-        g.type = 'text/javascript'; g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        const u="//${cfg.analytics.host}/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', ${cfg.analytics.siteId}]);
+        const d=document, g=d.createElement('script'), s=d.getElementsByTagName
+('script')[0];
+        g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
+      \`
+      document.head.appendChild(matomoScript);
     `)
-  } else if (analytics?.provider === "vercel") {
+  } else if (cfg.analytics?.provider === "vercel") {
     /**
      * script from {@link https://vercel.com/docs/analytics/quickstart?framework=html#add-the-script-tag-to-your-site|Vercel Docs}
      */
@@ -260,28 +246,16 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       vercelInsightsScript.defer = true
       document.head.appendChild(vercelInsightsScript)
     `)
-  } else if (analytics?.provider === "rybbit") {
+  } else if (cfg.analytics?.provider === "rybbit") {
     componentResources.afterDOMLoaded.push(`
       const rybbitScript = document.createElement("script");
-      rybbitScript.src = ${js(analytics.host ?? "https://app.rybbit.io")} + "/api/script.js";
-      rybbitScript.setAttribute("data-site-id", ${js(analytics.siteId)});
+      rybbitScript.src = "${cfg.analytics.host ?? "https://app.rybbit.io"}/api/script.js";
+      rybbitScript.setAttribute("data-site-id", "${cfg.analytics.siteId}");
       rybbitScript.async = true;
       rybbitScript.defer = true;
 
       document.head.appendChild(rybbitScript);
     `)
-  }
-
-  // Prefetching (before the router or the no-SPA shim: both dispatch the first `nav`). Its
-  // settings lead the same script, since the other scripts load in parallel.
-  // (`prefetch: false` in YAML means off as well)
-  const prefetch = (cfg.prefetch as unknown) === false ? "off" : (cfg.prefetch ?? "viewport")
-  if (prefetch !== "off") {
-    componentResources.afterDOMLoaded.push(
-      `window.__quartzPrefetchMode = ${js(prefetch)};\n` +
-        `window.__quartzSpa = ${cfg.enableSPA ? "true" : "false"};\n` +
-        prefetchScript,
-    )
   }
 
   if (cfg.enableSPA) {
@@ -510,9 +484,6 @@ export const ComponentResources: QuartzEmitterPlugin = () => {
       }
 
       ctx.extractedInlineResources = extractedInlineResources
-
-      // Files plugins ship with the site (externalResources().assets) → static/plugins/<to>
-      yield* emitStaticAssets(ctx, resources.assets)
 
       const cssHash = useHashing ? hashContent(cssContent) : null
       const prescriptHash = useHashing ? hashContent(prescript) : null

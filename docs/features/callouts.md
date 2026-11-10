@@ -8,7 +8,7 @@ Quartz supports the same Admonition-callout syntax as Obsidian.
 
 This includes
 
-- 13 distinct callout types (most with several aliases)
+- 12 Distinct callout types (each with several aliases)
 - Collapsable callouts
 
 ```
@@ -18,8 +18,8 @@ This includes
 
 See [documentation on supported types and syntax here](https://help.obsidian.md/Editing+and+formatting/Callouts).
 
-> [!note]
-> In the default config [[ObsidianFlavoredMarkdown]] (`order: 40`) runs after [[SyntaxHighlighting]] (`order: 20`). If callouts don't show up and you changed either `order`, restore that sequence.
+> [!warning]
+> Wondering why callouts may not be showing up even if you have them enabled? You may need to reorder your plugins so that [[ObsidianFlavoredMarkdown]] is _after_ [[SyntaxHighlighting]].
 
 ## Customization
 

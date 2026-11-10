@@ -57,14 +57,11 @@ The `groupOptions` field on each plugin entry supports the following flex item p
 
 The top-level `layout.groups` section configures the flex container itself:
 
-| Option      | Type                                                           | Description                                                                       |
-| ----------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `direction` | `"row"` \| `"row-reverse"` \| `"column"` \| `"column-reverse"` | Flex direction                                                                    |
-| `wrap`      | `"nowrap"` \| `"wrap"` \| `"wrap-reverse"`                     | Flex wrap behavior                                                                |
-| `gap`       | `string`                                                       | Gap between flex items (e.g., `"0.5rem"`)                                         |
-| `priority`  | `number`                                                       | Position of the whole group in its slot (defaults to its first member's priority) |
-
-Groups work in the `header`, `beforeBody`, `afterBody`, `left` and `right` slots. Groups are formed per slot: members with different `position`s end up in separate groups. Avoid groups in the `footer` slot — the frames place footer components directly in the page grid, and a group wrapper is not assigned to the footer area.
+| Option      | Type                                                           | Description                               |
+| ----------- | -------------------------------------------------------------- | ----------------------------------------- |
+| `direction` | `"row"` \| `"row-reverse"` \| `"column"` \| `"column-reverse"` | Flex direction                            |
+| `wrap`      | `"nowrap"` \| `"wrap"` \| `"wrap-reverse"`                     | Flex wrap behavior                        |
+| `gap`       | `string`                                                       | Gap between flex items (e.g., `"0.5rem"`) |
 
 ### TS Override
 
@@ -74,10 +71,10 @@ For full programmatic control, use the `Component.Flex()` wrapper in `quartz.ts`
 Component.Flex({
   components: [
     {
-      Component: ExternalPlugin.Search(),
+      Component: Plugin.Search(),
       grow: true, // Search will grow to fill available space
     },
-    { Component: ExternalPlugin.Darkmode() }, // Darkmode keeps its natural size
+    { Component: Plugin.Darkmode() }, // Darkmode keeps its natural size
   ],
   direction: "row",
   gap: "1rem",
@@ -130,13 +127,11 @@ plugins:
 
 Available `display` values:
 
-| Value          | Description                                                                 |
-| -------------- | --------------------------------------------------------------------------- |
-| `all`          | Visible on all screen sizes (default)                                       |
-| `mobile-only`  | Only visible below the `mobile` breakpoint (800px by default)               |
-| `desktop-only` | Hidden below the `mobile` breakpoint (visible on tablet and desktop widths) |
-
-Any other value is ignored with a build warning.
+| Value          | Description                           |
+| -------------- | ------------------------------------- |
+| `all`          | Visible on all screen sizes (default) |
+| `mobile-only`  | Only visible on mobile devices        |
+| `desktop-only` | Only visible on desktop devices       |
 
 ### TS Override
 
@@ -147,7 +142,7 @@ Component.MobileOnly(Component.Spacer())
 ```
 
 ```ts title="quartz.ts (override)"
-Component.DesktopOnly(ExternalPlugin.TableOfContents())
+Component.DesktopOnly(Plugin.TableOfContents())
 ```
 
 ## `ConditionalRender` Component
@@ -179,28 +174,14 @@ Available built-in conditions:
 
 ### TS Override
 
-For custom conditions that aren't covered by the built-in presets, import the internal component utilities and the component you want to wrap in `quartz.ts`. Place `Component.ConditionalRender()` in the layout slot where the wrapped component should appear. For example, this renders Search in the left sidebar only for pages under `notes/`:
+For custom conditions that aren't covered by the built-in presets, use `Component.ConditionalRender()` in `quartz.ts`:
 
 ```ts title="quartz.ts (override)"
-import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
-import * as Component from "./quartz/components"
-import * as ExternalPlugin from "./.quartz/plugins"
-
-const config = await loadQuartzConfig()
-export default config
-export const layout = await loadQuartzLayout({
-  defaults: {
-    left: [
-      Component.ConditionalRender({
-        component: ExternalPlugin.Search(),
-        condition: (props) => props.fileData.slug?.startsWith("notes/") ?? false,
-      }),
-    ],
-  },
+Component.ConditionalRender({
+  component: Plugin.Search(),
+  condition: (props) => props.displayClass !== "fullpage",
 })
 ```
-
-`./.quartz/plugins` is the generated index of all installed plugins, npm and Git alike (importing a single plugin from `./.quartz/plugins/<name>` only works for plugins installed from Git). The wrapped plugin must be installed and enabled in `quartz.config.yaml`. A TypeScript layout override replaces the selected slot, so include any other components you want to keep in that slot alongside the conditional component.
 
 ```typescript
 type ConditionalRenderConfig = {
@@ -210,4 +191,4 @@ type ConditionalRenderConfig = {
 ```
 
 > [!tip]
-> You can also register custom conditions for use in YAML: call `registerCondition(name, (props) => boolean)` from `./quartz/plugins/loader/conditions` at the top of `quartz.ts`, before `loadQuartzConfig()`, then use `condition: <name>` in a layout block.
+> You can also register custom conditions for use in YAML by calling `registerCondition()` in a plugin's initialization code. See [[making plugins]] for more details.
