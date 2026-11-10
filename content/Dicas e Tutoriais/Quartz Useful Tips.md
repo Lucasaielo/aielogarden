@@ -3,7 +3,7 @@ title: Lembretes Quartz
 draft: false
 tags:
   - seedling
-Language: English
+  - english
 ---
 ## Quartz Sync Shortcut
 
