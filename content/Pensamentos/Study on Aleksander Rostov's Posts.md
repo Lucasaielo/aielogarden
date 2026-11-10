@@ -2,7 +2,7 @@
 title: Study on Aleksander Rostov's Posts
 draft: false
 tags:
-  - seedling
+  - faisca
   - english
 ---
 Study on how Alexander Rostov structures his instagram posts.

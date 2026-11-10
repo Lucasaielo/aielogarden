@@ -2,7 +2,7 @@
 title: Muita ideia paralisa
 draft: false
 tags:
-  - evergreen
+  - incendio
   - ensaio
 ---
 

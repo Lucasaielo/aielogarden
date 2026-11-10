@@ -2,7 +2,7 @@
 title: Pausa pra Scrollar
 draft: false
 tags:
-  - sapling
+  - labareda
   - ensaio
 ---
  A pausa para fumar é uma instituição ainda hoje, até dentro do mercado de trabalho. Tirar alguns minutos para satisfazer seu vício é totalmente entendível e aceitável socialmente. Em alguns círculos, você é até estranho se não estiver tirando suas pausas para fumar.

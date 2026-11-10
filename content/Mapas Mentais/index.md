@@ -2,7 +2,7 @@
 title: Mapas Mentais
 draft: false
 tags:
-  - seedling
+  - faisca
 ---
   Mapas mentais são uma coisa meio confusa de dividir. Em teoria acho que deveria ter um só mapa mental infinito pra todos os lados.
   

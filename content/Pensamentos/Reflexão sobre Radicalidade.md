@@ -2,7 +2,7 @@
 title: Reflexão sobre Radicalidade
 draft: false
 tags:
-  - seedling
+  - faisca
 ---
  Talvez o negócio seja mesmo ser mais radical abertamente pra esquerda.
  

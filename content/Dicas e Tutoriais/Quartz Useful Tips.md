@@ -2,7 +2,7 @@
 title: Lembretes Quartz
 draft: false
 tags:
-  - seedling
+  - faisca
   - english
 ---
 ## Quartz Sync Shortcut

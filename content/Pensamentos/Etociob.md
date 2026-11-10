@@ -2,7 +2,7 @@
 title: Etociob
 draft: false
 tags:
-  - sapling
+  - labareda
   - conceito
 ---
  Boycott vem de Charles Boycott, o primeiro boicotado do mundo.

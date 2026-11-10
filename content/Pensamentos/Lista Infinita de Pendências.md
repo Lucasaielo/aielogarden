@@ -2,7 +2,7 @@
 title: Lista Infinita de Pendências
 draft: false
 tags:
-  - seedling
+  - faisca
 ---
 Na antologia de Summer eternal, Mark apresenta a ideia de um Infinite Backlog, com todas as ideias interessantes que provavelmente não vão ter tempo de serem feitas, para que, assim que um momento ocioso apareça, você pode olhar no backlog e pegar alguma dessas ideias pra fazer.
 

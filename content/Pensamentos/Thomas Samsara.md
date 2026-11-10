@@ -3,7 +3,7 @@ title: Thomas Samsara
 draft: false
 tags:
   - ShowerThought
-  - sapling
+  - labareda
   - conceito
 ---
  Thomas Samsara é o revolucionário de esquerda que atingiu o nirvana e vai nos libertar do eterno ciclo do capitalismo.
