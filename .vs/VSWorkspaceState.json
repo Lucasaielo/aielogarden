@@ -4,11 +4,8 @@
     "\\content",
     "\\content\\attachments",
     "\\quartz",
-    "\\quartz\\components",
-    "\\quartz\\plugins",
-    "\\quartz\\plugins\\transformers",
-    "\\quartz\\static"
+    "\\quartz\\plugins\\transformers"
   ],
-  "SelectedNode": "\\docs",
+  "SelectedNode": "\\quartz.config.default.yaml",
   "PreviewInSolutionExplorer": false
 }

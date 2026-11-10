@@ -4,8 +4,8 @@
     "explorer": {
       "source": "github:quartz-community/explorer",
       "resolved": "https://github.com/quartz-community/explorer.git",
-      "commit": "bf8e93766283caab163fc11bc8b5904790a769bc",
-      "installedAt": "2026-10-14T22:24:47.808Z"
+      "commit": "71018f833298a39d6f8ee4cd53a56695aaa68169",
+      "installedAt": "2026-11-10T03:59:58.655Z"
     },
     "fonts": {
       "source": "github:quartz-community/fonts",
@@ -16,8 +16,8 @@
     "obsidian-flavored-markdown": {
       "source": "github:quartz-community/obsidian-flavored-markdown",
       "resolved": "https://github.com/quartz-community/obsidian-flavored-markdown.git",
-      "commit": "1ae94b7961332d383bd68a92b1178be54f1422a7",
-      "installedAt": "2026-10-15T03:35:32.370Z"
+      "commit": "c81f63b884f86bf83e54cd65f56ba465d93ce1a6",
+      "installedAt": "2026-11-10T03:59:58.691Z"
     }
   }
 }
