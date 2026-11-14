@@ -3,9 +3,8 @@
     "",
     "\\content",
     "\\content\\attachments",
-    "\\quartz",
-    "\\quartz\\plugins\\transformers"
+    "\\quartz"
   ],
-  "SelectedNode": "\\quartz.config.default.yaml",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

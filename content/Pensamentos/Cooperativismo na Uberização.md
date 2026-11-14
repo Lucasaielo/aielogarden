@@ -22,19 +22,19 @@ Existe o risco de a cooperativa ter todo o trabalho de organizar o trabalhador s
 ---
 ## Discussão entre Amigos
 
-O problema q eu vejo na organização dos motoboys é q o trabalho uberizado é um trabalho já além de uma terceirização, a pessoa n tem contato nenhum com nada mais, então organizar só essa força de trabalho é muito pouco, pq não se tem controle sobre o processo geral.
+<p style="padding-left: 20%;">O problema q eu vejo na organização dos motoboys é q o trabalho uberizado é um trabalho já além de uma terceirização, a pessoa n tem contato nenhum com nada mais, então organizar só essa força de trabalho é muito pouco, pq não se tem controle sobre o processo geral.
 Uma cooperativa de motoboys, por definição, precisa estar servindo outra empresa, pq senão os motoboys não têm o que fazer.
 É diferente de um restaurante que é uma cooperativa e tem seus próprios motoboys pra entregar sua própria comida, funcionando de forma um pouco mais isolada.
-
-<div align="right" style="color: var(--secondary);">
+</p>
+<p style="color: var(--accent)">
 Bem pontuado, mas de certa forma toda empresa já tá alocada servindo outra empresa ou pelo menos dependendo dela.
 O ponto que acho interessante do que ele trás é essa tendência de monopólio, de empresas poderem estrangular projetos
 Aí nesse sentido acho o ponto dele e teu interessantes. É uma independência da cadeia de produção e consumo que fica difícil sobreviver. A Oxxo estrangulando comércio local talvez seja um caso a se estudar
-</div>
-
-O Oxxo é um exemplo bom pq o poder de estrangulamento dele vem de operar em escala multinacional. Ele aumenta o preço um pouco num país q ele já domina e abaixa o preço num país novo, até acabar com o comércio local.
+</p>
+<p style="padding-left: 20%;">O Oxxo é um exemplo bom pq o poder de estrangulamento dele vem de operar em escala multinacional. Ele aumenta o preço um pouco num país q ele já domina e abaixa o preço num país novo, até acabar com o comércio local.
 Mas tem outros exemplos interessantes. Tem o caso da empresa nova com muito investimento. O Ifood já foi isso, hj em dia a Keeta tá fazendo isso e o Ifood tá reclamando q eles tão dando muito desconto e é uma competição desleal.
 E tem casos mais extremos tipo a Amazon, que ganha dinheiro com servidor (AWS), joga dinheiro fora por influência (Amazon prime video) e gasta dinheiro onde precisa pra estrangular o mercado (Amazon loja).
+</p>
 
 ---
 ## Mais pensamentos

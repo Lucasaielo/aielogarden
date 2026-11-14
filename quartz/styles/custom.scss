@@ -1,6 +1,15 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Custom Colors
+:root {
+    --accent: #d19c0f;
+    --accent2: #c9770c;
+}
+
+:root[saved-theme="dark"] {
+    --accent: #edde87;
+    --accent2: #ebab57;
+}
 
 /* Banner above the site title */
 .page-title::before {
