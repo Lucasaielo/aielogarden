@@ -16,3 +16,4 @@ A variação de textura e cores no contraste do concreto com os cacos coloridos 
 
 **Pixo** e graffiti são marcas na cidade, como runas que apontam a existência de um povo que fala outra língua. As letras se misturam, os significados são totalmente perdidos pra quem não tem o contexto, mas o que sobra é um amontoado de desenhos e rabiscos que preenchem muros vazios com alguma coisa.
 
+**Vegetação** especialmente quando crescendo em lugares inusitados. Aquela trepadeira que tomou um poste, transformando algo totalmente cidade em uma coisa natural, que se mescla com a vegetação. Aquela florzinha nascendo entre rachaduras de concreto, uma luz no meio da escuridão da selva de pedra
